@@ -6,10 +6,6 @@ import katex from 'rehype-katex'
 import highlight from '@mapbox/rehype-prism'
 import html from 'rehype-stringify'
 
-import githubSchema from 'hast-util-sanitize/lib/github.json'
-
-githubSchema.attributes['*'].push('className')
-
 export default async function markdownToHtml(markdown: string) {
   const result = await unified()
     .use(parse)
