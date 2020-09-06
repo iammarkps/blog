@@ -1,6 +1,6 @@
 ---
 title: 'It was going to be a lonely trip back.'
-excerpt: 'รีวิวค่าย JWC11 แบบย่อ ๆ'
+excerpt: 'JWC หรือ Junior Webmaster Camp คือค่ายที่จัดขึ้นโดยชมรมเยาวชนผู้ดูแลเว็บไทยในความดูแลของสมาคมผู้ดูแลเว็บไทย เพื่อเปิดโอกาสให้เยาวชนไทยในระดับมัธยมศึกษาตอนปลายหรือเทียบเท่า ได้มาสัมผัสการทำงานในวงการดิจิทัล ทั้ง 4 สาขา'
 coverImage: '/assets/blog/jwc11/poster.jpg'
 date: '2020-03-16T05:35:07.322Z'
 author:
