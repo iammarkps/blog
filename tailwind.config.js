@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   purge: ['./components/**/*.tsx', './pages/**/*.tsx'],
   theme: {
@@ -28,6 +30,16 @@ module.exports = {
         small: '0 5px 10px rgba(0, 0, 0, 0.12)',
         medium: '0 8px 30px rgba(0, 0, 0, 0.12)',
       },
+    },
+    fontFamily: {
+      sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+      display: [
+        'Inter var',
+        'SF Pro Display',
+        'Sukhumvit Set',
+        'Kanit',
+        ...defaultTheme.fontFamily.sans,
+      ],
     },
   },
   variants: {},
