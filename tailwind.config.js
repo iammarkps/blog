@@ -2,7 +2,66 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: ['./components/**/*.tsx', './pages/**/*.tsx'],
+
   theme: {
+    typography: (theme) => ({
+      default: {
+        css: {
+          h1: {
+            color: defaultTheme.colors.gray[900],
+            fontWeight: '800',
+            fontFamily: `${theme('fontFamily.display')}`,
+          },
+          h2: {
+            color: defaultTheme.colors.gray[900],
+            fontWeight: '700',
+            fontFamily: `${theme('fontFamily.display')}`,
+          },
+          h3: {
+            color: defaultTheme.colors.gray[900],
+            fontWeight: '600',
+            fontFamily: `${theme('fontFamily.display')}`,
+          },
+          h4: {
+            color: defaultTheme.colors.gray[900],
+            fontWeight: '600',
+            fontFamily: `${theme('fontFamily.display')}`,
+          },
+        },
+      },
+      lg: {
+        css: {
+          h1: {
+            fontFamily: `${theme('fontFamily.display')}`,
+          },
+          h2: {
+            fontFamily: `${theme('fontFamily.display')}`,
+          },
+          h3: {
+            fontFamily: `${theme('fontFamily.display')}`,
+          },
+          h4: {
+            fontFamily: `${theme('fontFamily.display')}`,
+          },
+        },
+      },
+      xl: {
+        css: {
+          h1: {
+            fontFamily: `${theme('fontFamily.display')}`,
+          },
+          h2: {
+            fontFamily: `${theme('fontFamily.display')}`,
+          },
+          h3: {
+            fontFamily: `${theme('fontFamily.display')}`,
+          },
+          h4: {
+            fontFamily: `${theme('fontFamily.display')}`,
+          },
+        },
+      },
+    }),
     extend: {
       colors: {
         'accent-1': '#FAFAFA',
