@@ -133,9 +133,11 @@ module.exports = {
             fontWeight: '400',
             fontDisplay: 'swap',
             src:
-              "local('Kanit Regular'), local('Kanit-Regular'), url('https://fonts.gstatic.com/s/kanit/v5/nKKZ-Go6G5tXcraBGwCKd6xBDFs.woff2') format('woff2')",
+              'local("Kanit Regular"), local("Kanit-Regular"), url(https://fonts.gstatic.com/s/kanit/v7/nKKZ-Go6G5tXcraBGwCKd6xBDFs.woff2) format("woff2")',
             unicodeRange: 'U+0E01-0E5B, U+200C-200D, U+25CC',
           },
+        },
+        {
           '@font-face': {
             fontFamily: 'Sukhumvit Set',
             fontDisplay: 'swap',
