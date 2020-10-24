@@ -93,6 +93,8 @@ Instagram: [@iammarkps](https://www.instagram.com/iammarkps/)
 
 Facebook: [Possawat Mark Suksai](https://www.facebook.com/markposswat/)
 
+สำหรับใครที่มีข้อสงสัยอะไรเกี่ยวกับการสอบอินเตอร์แนะนำให้เข้ากลุ่ม [รวมพลคนสอบอินเตอร์ by Learning Cafe](https://www.facebook.com/groups/1669234313171472) เลยครับ แนะนำดีมาก ๆ
+
 ## Annex A (Reading Resources)
 
 - *The New York Times*, [https://www.nytimes.com/](https://www.nytimes.com/)
