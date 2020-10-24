@@ -7,7 +7,7 @@ author:
   name: iammarkps
   picture: '/assets/blog/authors/iammarkps.jpg'
 ogImage:
-  url: 'https://blog.iammark.me/assets/blog/sat/og.jpg'
+  url: 'https://blog.iammark.me/assets/blog/sat/og.png'
 ---
 
 ก่อนจะเริ่มอธิบายต้องเท้าความก่อนว่า ตอนแรกผมอยากจะเข้า ISE เลยไปสอบ SAT ธรรมดาไว้ก่อนรอบแรก ค่อยเก็บ Subject Test รอบนั้นได้คะแนน 1250 (Math 720, Verbal 530) สอบรอบ October 2019
