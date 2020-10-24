@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { SITE_URL } from '../lib/constants'
 
 const Meta = () => {
   return (
@@ -31,7 +32,8 @@ const Meta = () => {
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <meta name="description" content="IAMMARKPS blog" />
+      <meta name="description" content="IAMMARKPS's blog" />
+      <meta property="og:image" content={`${SITE_URL}/og.jpg`} key="og:image" />
     </Head>
   )
 }
