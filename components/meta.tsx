@@ -32,7 +32,6 @@ const Meta = () => {
       <meta name="theme-color" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta name="description" content="IAMMARKPS blog" />
-      <meta property="og:image" content="/og.jpg" />
     </Head>
   )
 }
