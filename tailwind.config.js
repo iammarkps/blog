@@ -1,93 +1,82 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: ['./components/**/*.tsx', './pages/**/*.tsx'],
+  corePlugins: {
+    preflight: true,
+  },
+  purge: {
+    enabled: process.env.NODE_ENV !== 'development',
+    content: ['./src/**/*.ts', './src/**/*.tsx'],
+    options: {
+      defaultExtractor: (content) => content.match(/[\w-/.:]+(?<!:)/g) || [],
+    },
+  },
   theme: {
-    typography: (theme) => ({
-      default: {
-        css: {
-          h1: {
-            color: defaultTheme.colors.gray[900],
-            fontWeight: '800',
-            fontFamily: `${theme('fontFamily.display')}`,
-          },
-          h2: {
-            color: defaultTheme.colors.gray[900],
-            fontWeight: '700',
-            fontFamily: `${theme('fontFamily.display')}`,
-          },
-          h3: {
-            color: defaultTheme.colors.gray[900],
-            fontWeight: '600',
-            fontFamily: `${theme('fontFamily.display')}`,
-          },
-          h4: {
-            color: defaultTheme.colors.gray[900],
-            fontWeight: '600',
-            fontFamily: `${theme('fontFamily.display')}`,
-          },
-        },
-      },
-      lg: {
-        css: {
-          h1: {
-            fontFamily: `${theme('fontFamily.display')}`,
-          },
-          h2: {
-            fontFamily: `${theme('fontFamily.display')}`,
-          },
-          h3: {
-            fontFamily: `${theme('fontFamily.display')}`,
-          },
-          h4: {
-            fontFamily: `${theme('fontFamily.display')}`,
-          },
-        },
-      },
-      xl: {
-        css: {
-          h1: {
-            fontFamily: `${theme('fontFamily.display')}`,
-          },
-          h2: {
-            fontFamily: `${theme('fontFamily.display')}`,
-          },
-          h3: {
-            fontFamily: `${theme('fontFamily.display')}`,
-          },
-          h4: {
-            fontFamily: `${theme('fontFamily.display')}`,
-          },
-        },
-      },
-    }),
     extend: {
-      colors: {
-        'accent-1': '#FAFAFA',
-        'accent-2': '#EAEAEA',
-        'accent-7': '#333',
-        success: '#0070f3',
-        cyan: '#79FFE1',
-      },
-      spacing: {
-        28: '7rem',
-      },
-      letterSpacing: {
-        tighter: '-.04em',
-      },
-      lineHeight: {
-        tight: 1.2,
-      },
-      fontSize: {
-        '5xl': '2.5rem',
-        '6xl': '2.75rem',
-        '7xl': '4.5rem',
-        '8xl': '6.25rem',
-      },
-      boxShadow: {
-        small: '0 5px 10px rgba(0, 0, 0, 0.12)',
-        medium: '0 8px 30px rgba(0, 0, 0, 0.12)',
-      },
+      typography: (theme) => ({
+        default: {
+          css: {
+            h1: {
+              color: defaultTheme.colors.gray[900],
+              fontWeight: '800',
+              fontFamily: `${theme('fontFamily.display')}`,
+            },
+            h2: {
+              color: defaultTheme.colors.gray[900],
+              fontWeight: '700',
+              fontFamily: `${theme('fontFamily.display')}`,
+            },
+            h3: {
+              color: defaultTheme.colors.gray[900],
+              fontWeight: '600',
+              fontFamily: `${theme('fontFamily.display')}`,
+            },
+            h4: {
+              color: defaultTheme.colors.gray[900],
+              fontWeight: '600',
+              fontFamily: `${theme('fontFamily.display')}`,
+            },
+          },
+        },
+        lg: {
+          css: {
+            h1: {
+              fontFamily: `${theme('fontFamily.display')}`,
+            },
+            h2: {
+              fontFamily: `${theme('fontFamily.display')}`,
+            },
+            h3: {
+              fontFamily: `${theme('fontFamily.display')}`,
+            },
+            h4: {
+              fontFamily: `${theme('fontFamily.display')}`,
+            },
+          },
+        },
+        xl: {
+          css: {
+            h1: {
+              fontFamily: `${theme('fontFamily.display')}`,
+            },
+            h2: {
+              fontFamily: `${theme('fontFamily.display')}`,
+            },
+            h3: {
+              fontFamily: `${theme('fontFamily.display')}`,
+            },
+            h4: {
+              fontFamily: `${theme('fontFamily.display')}`,
+            },
+          },
+        },
+      }),
+    },
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
     },
     fontFamily: {
       sans: ['Inter var', ...defaultTheme.fontFamily.sans],
@@ -131,8 +120,7 @@ module.exports = {
             fontStyle: 'normal',
             fontWeight: '400',
             fontDisplay: 'swap',
-            src:
-              'local("Kanit Regular"), local("Kanit-Regular"), url(https://fonts.gstatic.com/s/kanit/v7/nKKZ-Go6G5tXcraBGwCKd6xBDFs.woff2) format("woff2")',
+            src: 'local("Kanit Regular"), local("Kanit-Regular"), url(https://fonts.gstatic.com/s/kanit/v7/nKKZ-Go6G5tXcraBGwCKd6xBDFs.woff2) format("woff2")',
             unicodeRange: 'U+0E01-0E5B, U+200C-200D, U+25CC',
           },
         },
