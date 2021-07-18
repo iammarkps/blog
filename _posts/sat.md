@@ -97,6 +97,7 @@ Facebook: [Possawat Mark Suksai](https://www.facebook.com/markposswat/)
 ## Annex A (Reading Resources)
 
 - _The New York Times_, [https://www.nytimes.com/](https://www.nytimes.com/)
+- _CNBC_, [https://www.cnbc.com/](https://www.cnbc.com/)
 - _The Economist_, [https://www.economist.com/](https://www.economist.com/)
 - _Wired_, [https://www.wired.com/](https://www.wired.com/#)
 - _The Wall Street Journal_, [https://www.wsj.com/](https://www.wsj.com/)
